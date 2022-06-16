@@ -1,7 +1,7 @@
 {
-    "name": "RyuuuBOTZ",
+    "name": "Aine-Bot",
     "version": "07.06.98",
-    "description": "*_Chat/DM Owner To Buy Prem_*",
+    "description": "Customizable Whatsapp Bot",
     "depecrated": false,
     "main": "index.js",
     "directories": {
