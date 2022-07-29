@@ -1,0 +1,13 @@
+let scrap = require("../lib/scraper_animewallmobile")
+let fetch = require('node-fetch')
+
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+	scrap.animewallmobile("kobo").then(a => a[Math.floor(Math.random() * a.length)]).then(b => conn.sendFile(m.chat,b,b,"Done",m))
+   }
+    
+handler.help = ['kobo']
+handler.tags = ['internet']
+handler.command = /^(kobowall)$/i
+handler.limit = true
+
+module.exports = handler
